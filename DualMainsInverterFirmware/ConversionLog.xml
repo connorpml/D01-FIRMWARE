@@ -1,0 +1,522 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type='text/xsl' href='ConversionLog.xslt'?>
+<conversion conversiontitle="Upgrade Report - Atmel Software Framework Upgrade Log" subtitle1="Upgrading Modules From" subtitle2="to" date="Sunday, October 24, 2021" time="12:39 PM">
+  <general>
+    <log timestamp="10-24-2021 12-39-52">
+      <message>Unloading project</message>
+    </log>
+    <log timestamp="10-24-2021 12-39-52">
+      <message>Project unload complete.</message>
+    </log>
+    <log timestamp="10-24-2021 12-39-59">
+      <message>Reloading project after backup.</message>
+    </log>
+    <log timestamp="10-24-2021 12-40-04">
+      <message>Project reload complete.</message>
+    </log>
+    <log timestamp="10-24-2021 12-40-04">
+      <message>Upgrading of project started.</message>
+    </log>
+    <log timestamp="10-24-2021 12-41-11">
+      <message>Project upgrade complete</message>
+    </log>
+  </general>
+  <revert versiontext="3.42.0" description="Reverting from version">
+    <moduleinfo name="Common build items for user board support templates">
+      <action description="Delete framework file 'src\ASF\common2\boards\user_board\init.c'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\common2\boards\user_board\user_board.h'." result="WARNING" resulttext="An error occured when trying to check if empty parent directories can be deleted after file 'src\ASF\common2\boards\user_board\user_board.h' is removed. Access to the path 'D:\SyncPML\Design\Boards\DualMainsInverter_BRD-090117A\DualMainsInverterFirmware\DualMainsInverterFirmware\src\ASF\common2\boards\user_board\' is denied." />
+      <action description="Remove folder '../src/ASF/common2/boards/user_board' from include search path." result="SUCCESS" resulttext="" />
+      <action description="Remove defined symbol 'BOARD=USER_BOARD'." result="SUCCESS" resulttext="" />
+      <action description="Remove Assembler Flag '-DBOARD=USER_BOARD'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="Generic board support">
+      <action description="Delete framework file 'src\ASF\common\boards\board.h'." result="WARNING" resulttext="An error occured when trying to check if empty parent directories can be deleted after file 'src\ASF\common\boards\board.h' is removed. Access to the path 'D:\SyncPML\Design\Boards\DualMainsInverter_BRD-090117A\DualMainsInverterFirmware\DualMainsInverterFirmware\src\ASF\common\boards\' is denied." />
+      <action description="Remove folder '../src/ASF/common/boards' from include search path." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="Common SAM0 compiler driver">
+      <action description="Delete framework file 'src\ASF\sam0\utils\compiler.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\sam0\utils\header_files\io.h'." result="WARNING" resulttext="An error occured when trying to check if empty parent directories can be deleted after file 'src\ASF\sam0\utils\header_files\io.h' is removed. Access to the path 'D:\SyncPML\Design\Boards\DualMainsInverter_BRD-090117A\DualMainsInverterFirmware\DualMainsInverterFirmware\src\ASF\sam0\utils\header_files\' is denied." />
+      <action description="Delete framework file 'src\ASF\sam0\utils\status_codes.h'." result="SUCCESS" resulttext="" />
+      <action description="Remove folder '../src/ASF/sam0/utils' from include search path." result="SUCCESS" resulttext="" />
+      <action description="Remove folder '../src/ASF/sam0/utils/header_files' from include search path." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="sam0.utils.preprocessor">
+      <action description="Delete framework file 'src\ASF\sam0\utils\preprocessor\tpaste.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\sam0\utils\preprocessor\mrepeat.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\sam0\utils\preprocessor\mrecursion.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\sam0\utils\preprocessor\preprocessor.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\sam0\utils\preprocessor\stringz.h'." result="WARNING" resulttext="An error occured when trying to check if empty parent directories can be deleted after file 'src\ASF\sam0\utils\preprocessor\stringz.h' is removed. Access to the path 'D:\SyncPML\Design\Boards\DualMainsInverter_BRD-090117A\DualMainsInverterFirmware\DualMainsInverterFirmware\src\ASF\sam0\utils\preprocessor\' is denied." />
+      <action description="Remove folder '../src/ASF/sam0/utils/preprocessor' from include search path." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="Generic Makefile for SAM0 products">
+      <action description="Delete framework file 'src\ASF\sam0\utils\make\Makefile.sam.in'." result="WARNING" resulttext="An error occured when trying to check if empty parent directories can be deleted after file 'src\ASF\sam0\utils\make\Makefile.sam.in' is removed. Access to the path 'D:\SyncPML\Design\Boards\DualMainsInverter_BRD-090117A\DualMainsInverterFirmware\DualMainsInverterFirmware\src\ASF\sam0\utils\make\' is denied." />
+    </moduleinfo>
+    <moduleinfo name="CMSIS thirdparty sources">
+      <action description="Delete framework file 'src\ASF\thirdparty\CMSIS\Include\arm_math.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\thirdparty\CMSIS\Include\core_cmFunc.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\thirdparty\CMSIS\Include\core_cm0plus.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\thirdparty\CMSIS\Include\core_cmInstr.h'." result="SUCCESS" resulttext="" />
+      <action description="Remove folder '../src/ASF/thirdparty/CMSIS/Include' from include search path." result="SUCCESS" resulttext="" />
+      <action description="Remove folder '../src/ASF/thirdparty/CMSIS/Lib/GCC' from include search path." result="SUCCESS" resulttext="" />
+      <action description="Remove defined symbol 'ARM_MATH_CM0PLUS=true'." result="SUCCESS" resulttext="" />
+      <action description="Remove Assembler Flag '-DARM_MATH_CM0PLUS=true'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\thirdparty\CMSIS\Lib\GCC\libarm_cortexM0l_math.a'." result="WARNING" resulttext="An error occured when trying to check if empty parent directories can be deleted after file 'src\ASF\thirdparty\CMSIS\Lib\GCC\libarm_cortexM0l_math.a' is removed. Access to the path 'D:\SyncPML\Design\Boards\DualMainsInverter_BRD-090117A\DualMainsInverterFirmware\DualMainsInverterFirmware\src\ASF\thirdparty\CMSIS\Lib\GCC\' is denied." />
+      <action description="Remove library 'libarm_cortexM0l_math' from included libraries." result="SUCCESS" resulttext="" />
+      <action description="Remove '../src/ASF/thirdparty/CMSIS/Lib/GCC from library search path." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="CMSIS license">
+      <action description="Delete framework file 'src\ASF\thirdparty\CMSIS\CMSIS_END_USER_LICENCE_AGREEMENT.pdf'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\thirdparty\CMSIS\README.txt'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\thirdparty\CMSIS\ATMEL-disclaimer.txt'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\thirdparty\CMSIS\Lib\license.txt'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="Syscalls for C library">
+      <action description="Delete framework file 'src\ASF\sam0\utils\syscalls\gcc\syscalls.c'." result="WARNING" resulttext="An error occured when trying to check if empty parent directories can be deleted after file 'src\ASF\sam0\utils\syscalls\gcc\syscalls.c' is removed. Access to the path 'D:\SyncPML\Design\Boards\DualMainsInverter_BRD-090117A\DualMainsInverterFirmware\DualMainsInverterFirmware\src\ASF\sam0\utils\syscalls\gcc\' is denied." />
+    </moduleinfo>
+    <moduleinfo name="Interrupt management - SAM implementation">
+      <action description="Delete framework file 'src\ASF\common\utils\interrupt\interrupt_sam_nvic.c'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\common\utils\interrupt.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\common\utils\interrupt\interrupt_sam_nvic.h'." result="WARNING" resulttext="An error occured when trying to check if empty parent directories can be deleted after file 'src\ASF\common\utils\interrupt\interrupt_sam_nvic.h' is removed. Access to the path 'D:\SyncPML\Design\Boards\DualMainsInverter_BRD-090117A\DualMainsInverterFirmware\DualMainsInverterFirmware\src\ASF\common\utils\interrupt\' is denied." />
+      <action description="Remove folder '../src/ASF/common/utils' from include search path." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="Part identification macros">
+      <action description="Delete framework file 'src\ASF\common\utils\parts.h'." result="SUCCESS" resulttext="" />
+      <action description="Remove folder '../src/ASF/common/utils' from include search path." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="SAMD10 part definitions">
+      <action description="Delete framework file 'src\ASF\sam0\utils\cmsis\samd10\include\samd10d12as.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\sam0\utils\cmsis\samd10\include\samd10d13as.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\sam0\utils\cmsis\samd10\include\samd10d14as.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\sam0\utils\cmsis\samd10\include\samd10.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\sam0\utils\cmsis\samd10\include\samd10d14au.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\sam0\utils\cmsis\samd10\include\samd10c12a.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\sam0\utils\cmsis\samd10\include\samd10c13a.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\sam0\utils\cmsis\samd10\include\samd10c14a.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\sam0\utils\cmsis\samd10\include\samd10d12am.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\sam0\utils\cmsis\samd10\include\samd10d13am.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\sam0\utils\cmsis\samd10\include\samd10d14am.h'." result="SUCCESS" resulttext="" />
+      <action description="Remove folder '../src/ASF/sam0/utils/cmsis/samd10/include' from include search path." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="SAMD10 component definitions">
+      <action description="Delete framework file 'src\ASF\sam0\utils\cmsis\samd10\include\component\tc.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\sam0\utils\cmsis\samd10\include\component\adc.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\sam0\utils\cmsis\samd10\include\component\ac.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\sam0\utils\cmsis\samd10\include\component\dac.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\sam0\utils\cmsis\samd10\include\component\dmac.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\sam0\utils\cmsis\samd10\include\component\pac.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\sam0\utils\cmsis\samd10\include\component\nvmctrl.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\sam0\utils\cmsis\samd10\include\component\evsys.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\sam0\utils\cmsis\samd10\include\component\eic.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\sam0\utils\cmsis\samd10\include\component\port.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\sam0\utils\cmsis\samd10\include\component\gclk.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\sam0\utils\cmsis\samd10\include\component\pm.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\sam0\utils\cmsis\samd10\include\component\mtb.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\sam0\utils\cmsis\samd10\include\component\sysctrl.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\sam0\utils\cmsis\samd10\include\component\dsu.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\sam0\utils\cmsis\samd10\include\component\rtc.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\sam0\utils\cmsis\samd10\include\component\tcc.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\sam0\utils\cmsis\samd10\include\component\wdt.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\sam0\utils\cmsis\samd10\include\component\hmatrixb.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\sam0\utils\cmsis\samd10\include\component\sercom.h'." result="WARNING" resulttext="An error occured when trying to check if empty parent directories can be deleted after file 'src\ASF\sam0\utils\cmsis\samd10\include\component\sercom.h' is removed. Access to the path 'D:\SyncPML\Design\Boards\DualMainsInverter_BRD-090117A\DualMainsInverterFirmware\DualMainsInverterFirmware\src\ASF\sam0\utils\cmsis\samd10\include\component\' is denied." />
+    </moduleinfo>
+    <moduleinfo name="SAMD10 instance definitions">
+      <action description="Delete framework file 'src\ASF\sam0\utils\cmsis\samd10\include\instance\ac.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\sam0\utils\cmsis\samd10\include\instance\gclk.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\sam0\utils\cmsis\samd10\include\instance\sbmatrix.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\sam0\utils\cmsis\samd10\include\instance\tc1.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\sam0\utils\cmsis\samd10\include\instance\tc2.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\sam0\utils\cmsis\samd10\include\instance\evsys.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\sam0\utils\cmsis\samd10\include\instance\sercom0.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\sam0\utils\cmsis\samd10\include\instance\sercom1.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\sam0\utils\cmsis\samd10\include\instance\port.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\sam0\utils\cmsis\samd10\include\instance\sercom2.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\sam0\utils\cmsis\samd10\include\instance\pac2.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\sam0\utils\cmsis\samd10\include\instance\pac1.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\sam0\utils\cmsis\samd10\include\instance\pac0.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\sam0\utils\cmsis\samd10\include\instance\mtb.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\sam0\utils\cmsis\samd10\include\instance\rtc.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\sam0\utils\cmsis\samd10\include\instance\tcc0.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\sam0\utils\cmsis\samd10\include\instance\nvmctrl.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\sam0\utils\cmsis\samd10\include\instance\eic.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\sam0\utils\cmsis\samd10\include\instance\adc.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\sam0\utils\cmsis\samd10\include\instance\wdt.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\sam0\utils\cmsis\samd10\include\instance\dmac.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\sam0\utils\cmsis\samd10\include\instance\sysctrl.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\sam0\utils\cmsis\samd10\include\instance\dsu.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\sam0\utils\cmsis\samd10\include\instance\pm.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\sam0\utils\cmsis\samd10\include\instance\dac.h'." result="WARNING" resulttext="An error occured when trying to check if empty parent directories can be deleted after file 'src\ASF\sam0\utils\cmsis\samd10\include\instance\dac.h' is removed. Access to the path 'D:\SyncPML\Design\Boards\DualMainsInverter_BRD-090117A\DualMainsInverterFirmware\DualMainsInverterFirmware\src\ASF\sam0\utils\cmsis\samd10\include\instance\' is denied." />
+    </moduleinfo>
+    <moduleinfo name="SAMD10 PIO definitions">
+      <action description="Delete framework file 'src\ASF\sam0\utils\cmsis\samd10\include\pio\samd10d12am.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\sam0\utils\cmsis\samd10\include\pio\samd10d13as.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\sam0\utils\cmsis\samd10\include\pio\samd10c14a.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\sam0\utils\cmsis\samd10\include\pio\samd10d12as.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\sam0\utils\cmsis\samd10\include\pio\samd10d14am.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\sam0\utils\cmsis\samd10\include\pio\samd10d14as.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\sam0\utils\cmsis\samd10\include\pio\samd10c13a.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\sam0\utils\cmsis\samd10\include\pio\samd10c12a.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\sam0\utils\cmsis\samd10\include\pio\samd10d14au.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\sam0\utils\cmsis\samd10\include\pio\samd10d13am.h'." result="WARNING" resulttext="An error occured when trying to check if empty parent directories can be deleted after file 'src\ASF\sam0\utils\cmsis\samd10\include\pio\samd10d13am.h' is removed. Access to the path 'D:\SyncPML\Design\Boards\DualMainsInverter_BRD-090117A\DualMainsInverterFirmware\DualMainsInverterFirmware\src\ASF\sam0\utils\cmsis\samd10\include\pio\' is denied." />
+    </moduleinfo>
+    <moduleinfo name="SAMD10 startup code">
+      <action description="Delete framework file 'src\ASF\sam0\utils\cmsis\samd10\source\gcc\startup_samd10.c'." result="WARNING" resulttext="An error occured when trying to check if empty parent directories can be deleted after file 'src\ASF\sam0\utils\cmsis\samd10\source\gcc\startup_samd10.c' is removed. Access to the path 'D:\SyncPML\Design\Boards\DualMainsInverter_BRD-090117A\DualMainsInverterFirmware\DualMainsInverterFirmware\src\ASF\sam0\utils\cmsis\samd10\source\gcc\' is denied." />
+      <action description="Delete framework file 'src\ASF\sam0\utils\cmsis\samd10\source\system_samd10.c'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\sam0\utils\cmsis\samd10\source\system_samd10.h'." result="SUCCESS" resulttext="" />
+      <action description="Remove folder '../src/ASF/sam0/utils/cmsis/samd10/include' from include search path." result="SUCCESS" resulttext="" />
+      <action description="Remove folder '../src/ASF/sam0/utils/cmsis/samd10/source' from include search path." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="Linker script for SAMD10D14AM">
+      <action description="Delete framework file 'src\ASF\sam0\utils\linker_scripts\samd10\gcc\samd10d14am_flash.ld'." result="WARNING" resulttext="An error occured when trying to check if empty parent directories can be deleted after file 'src\ASF\sam0\utils\linker_scripts\samd10\gcc\samd10d14am_flash.ld' is removed. Access to the path 'D:\SyncPML\Design\Boards\DualMainsInverter_BRD-090117A\DualMainsInverterFirmware\DualMainsInverterFirmware\src\ASF\sam0\utils\linker_scripts\samd10\gcc\' is denied." />
+    </moduleinfo>
+  </revert>
+  <revert versiontext="3.42.0" description="Reverting from version" />
+  <update versiontext="3.43.0" description="Upgrading to version">
+    <moduleinfo name="Common build items for user board support templates">
+      <action description="Import framework file as 'src\ASF\common2\boards\user_board\init.c'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\common2\boards\user_board\user_board.h'." result="SUCCESS" resulttext="" />
+      <action description="Add folder '../src/ASF/common2/boards/user_board' to include search path." result="SUCCESS" resulttext="" />
+      <action description="Define symbol 'BOARD=USER_BOARD'." result="SUCCESS" resulttext="" />
+      <action description="Add Assembler Flag '-DBOARD=USER_BOARD'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="Generic board support">
+      <action description="Import framework file as 'src\ASF\common\boards\board.h'." result="SUCCESS" resulttext="" />
+      <action description="Add folder '../src/ASF/common/boards' to include search path." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="Common SAM0 compiler driver">
+      <action description="Import framework file as 'src\ASF\sam0\utils\compiler.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\header_files\io.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\status_codes.h'." result="SUCCESS" resulttext="" />
+      <action description="Add folder '../src/ASF/sam0/utils' to include search path." result="SUCCESS" resulttext="" />
+      <action description="Add folder '../src/ASF/sam0/utils/header_files' to include search path." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="sam0.utils.preprocessor">
+      <action description="Import framework file as 'src\ASF\sam0\utils\preprocessor\tpaste.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\preprocessor\mrepeat.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\preprocessor\mrecursion.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\preprocessor\preprocessor.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\preprocessor\stringz.h'." result="SUCCESS" resulttext="" />
+      <action description="Add folder '../src/ASF/sam0/utils/preprocessor' to include search path." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="Generic Makefile for SAM0 products">
+      <action description="Import framework file as 'src\ASF\sam0\utils\make\Makefile.sam.in'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="CMSIS thirdparty sources">
+      <action description="Import framework file as 'src\ASF\thirdparty\CMSIS\Include\arm_math.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\thirdparty\CMSIS\Include\core_cmFunc.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\thirdparty\CMSIS\Include\core_cm0plus.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\thirdparty\CMSIS\Include\core_cmInstr.h'." result="SUCCESS" resulttext="" />
+      <action description="Add folder '../src/ASF/thirdparty/CMSIS/Include' to include search path." result="SUCCESS" resulttext="" />
+      <action description="Add folder '../src/ASF/thirdparty/CMSIS/Lib/GCC' to include search path." result="SUCCESS" resulttext="" />
+      <action description="Define symbol 'ARM_MATH_CM0PLUS=true'." result="SUCCESS" resulttext="" />
+      <action description="Add Assembler Flag '-DARM_MATH_CM0PLUS=true'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\thirdparty\CMSIS\Lib\GCC\libarm_cortexM0l_math.a'." result="SUCCESS" resulttext="" />
+      <action description="Add library 'libarm_cortexM0l_math' to included libraries." result="SUCCESS" resulttext="" />
+      <action description="Add '../src/ASF/thirdparty/CMSIS/Lib/GCC' to library search path." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="CMSIS license">
+      <action description="Import framework file as 'src\ASF\thirdparty\CMSIS\CMSIS_END_USER_LICENCE_AGREEMENT.pdf'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\thirdparty\CMSIS\README.txt'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\thirdparty\CMSIS\ATMEL-disclaimer.txt'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\thirdparty\CMSIS\Lib\license.txt'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="Syscalls for C library">
+      <action description="Import framework file as 'src\ASF\sam0\utils\syscalls\gcc\syscalls.c'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="Interrupt management - SAM implementation">
+      <action description="Import framework file as 'src\ASF\common\utils\interrupt\interrupt_sam_nvic.c'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\common\utils\interrupt.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\common\utils\interrupt\interrupt_sam_nvic.h'." result="SUCCESS" resulttext="" />
+      <action description="Add folder '../src/ASF/common/utils' to include search path." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="Part identification macros">
+      <action description="Import framework file as 'src\ASF\common\utils\parts.h'." result="SUCCESS" resulttext="" />
+      <action description="Add folder '../src/ASF/common/utils' to include search path." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="SAMD10 part definitions">
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\samd10d12as.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\samd10d13as.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\samd10d14as.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\samd10.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\samd10d14au.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\samd10c12a.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\samd10c13a.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\samd10c14a.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\samd10d12am.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\samd10d13am.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\samd10d14am.h'." result="SUCCESS" resulttext="" />
+      <action description="Add folder '../src/ASF/sam0/utils/cmsis/samd10/include' to include search path." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="SAMD10 component definitions">
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\component\tc.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\component\adc.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\component\ac.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\component\dac.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\component\dmac.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\component\pac.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\component\nvmctrl.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\component\evsys.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\component\eic.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\component\port.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\component\gclk.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\component\pm.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\component\mtb.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\component\sysctrl.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\component\dsu.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\component\rtc.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\component\tcc.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\component\wdt.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\component\hmatrixb.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\component\sercom.h'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="SAMD10 instance definitions">
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\instance\ac.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\instance\gclk.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\instance\sbmatrix.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\instance\tc1.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\instance\tc2.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\instance\evsys.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\instance\sercom0.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\instance\sercom1.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\instance\port.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\instance\sercom2.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\instance\pac2.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\instance\pac1.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\instance\pac0.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\instance\mtb.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\instance\rtc.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\instance\tcc0.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\instance\nvmctrl.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\instance\eic.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\instance\adc.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\instance\wdt.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\instance\dmac.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\instance\sysctrl.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\instance\dsu.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\instance\pm.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\instance\dac.h'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="SAMD10 PIO definitions">
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\pio\samd10d12am.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\pio\samd10d13as.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\pio\samd10c14a.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\pio\samd10d12as.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\pio\samd10d14am.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\pio\samd10d14as.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\pio\samd10c13a.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\pio\samd10c12a.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\pio\samd10d14au.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\pio\samd10d13am.h'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="SAMD10 startup code">
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\source\gcc\startup_samd10.c'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\source\system_samd10.c'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\source\system_samd10.h'." result="SUCCESS" resulttext="" />
+      <action description="Add folder '../src/ASF/sam0/utils/cmsis/samd10/include' to include search path." result="SUCCESS" resulttext="" />
+      <action description="Add folder '../src/ASF/sam0/utils/cmsis/samd10/source' to include search path." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="Linker script for SAMD10D14AM">
+      <action description="Import framework file as 'src\ASF\sam0\utils\linker_scripts\samd10\gcc\samd10d14am_flash.ld'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+  </update>
+  <update versiontext="3.43.0" description="Upgrading to version">
+    <moduleinfo name="Generic board support">
+      <action description="Import framework file as 'src\ASF\common\boards\board.h'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="PORT - GPIO Pin Control">
+      <action description="Import framework file as 'src\ASF\sam0\drivers\port\port.c'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\drivers\port\quick_start\qs_port_basic.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\drivers\port\port.h'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="Generic Makefile for SAM0 products">
+      <action description="Import framework file as 'src\ASF\sam0\utils\make\Makefile.sam.in'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="USART - Serial interface- SAM implementation for devices with only USART">
+      <action description="Import framework file as 'src\ASF\common\services\serial\sam0_usart\usart_serial.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\common\services\serial\serial.h'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="Interrupt management - SAM implementation">
+      <action description="Import framework file as 'src\ASF\common\utils\interrupt\interrupt_sam_nvic.c'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\common\utils\interrupt.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\common\utils\interrupt\interrupt_sam_nvic.h'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="Part identification macros">
+      <action description="Import framework file as 'src\ASF\common\utils\parts.h'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="Delay routines">
+      <action description="Import framework file as 'src\ASF\common2\services\delay\sam0\systick_counter.c'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\common2\services\delay\delay.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\common2\services\delay\sam0\systick_counter.h'." result="SUCCESS" resulttext="" />
+      <action description="Define symbol 'SYSTICK_MODE'." result="SUCCESS" resulttext="" />
+      <action description="Add Assembler Flag '-DSYSTICK_MODE'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="ADC - Analog-to-Digital Converter (Callback APIs)">
+      <action description="Import framework file as 'src\ASF\sam0\drivers\adc\adc_callback.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\drivers\adc\adc.h'." result="SUCCESS" resulttext="" />
+      <action description="Define symbol 'ADC_CALLBACK_MODE=true'." result="SUCCESS" resulttext="" />
+      <action description="Add Assembler Flag '-DADC_CALLBACK_MODE=true'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="ADC - Analog-to-Digital Converter">
+      <action description="Import framework file as 'src\ASF\sam0\drivers\adc\adc_sam_d_r_h\adc.c'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\drivers\adc\adc_sam_d_r_h\adc_callback.c'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\drivers\adc\adc_sam_d_r_h\adc_feature.h'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="SERCOM Callback API">
+      <action description="Import framework file as 'src\ASF\sam0\drivers\sercom\sercom_interrupt.c'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\drivers\sercom\sercom.c'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\drivers\sercom\sercom_interrupt.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\drivers\sercom\sercom_pinout.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\drivers\sercom\sercom.h'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="SERCOM USART - Serial Communications (Callback APIs)">
+      <action description="Import framework file as 'src\ASF\sam0\drivers\sercom\usart\usart.c'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\drivers\sercom\usart\usart_interrupt.c'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\drivers\sercom\usart\quick_start_lin\qs_lin.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\drivers\sercom\usart\quick_start\qs_usart_basic_use.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\drivers\sercom\usart\usart_interrupt.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\drivers\sercom\usart\quick_start_callback\qs_usart_callback.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\drivers\sercom\usart\usart.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\drivers\sercom\usart\quick_start_dma\qs_usart_dma_use.h'." result="SUCCESS" resulttext="" />
+      <action description="Define symbol 'USART_CALLBACK_MODE=true'." result="SUCCESS" resulttext="" />
+      <action description="Add Assembler Flag '-DUSART_CALLBACK_MODE=true'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="SYSTEM - Clock Management for SAMD09/D10">
+      <action description="Import framework file as 'src\Config\conf_clocks.h'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="TC - Timer Counter (Callback APIs)">
+      <action description="Import framework file as 'src\ASF\sam0\drivers\tc\tc_interrupt.c'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\drivers\tc\tc_interrupt.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\drivers\tc\tc.h'." result="SUCCESS" resulttext="" />
+      <action description="Define symbol 'TC_ASYNC=true'." result="SUCCESS" resulttext="" />
+      <action description="Add Assembler Flag '-DTC_ASYNC=true'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="TC - Time Counter">
+      <action description="Import framework file as 'src\ASF\sam0\drivers\tc\tc_sam_d_r_h\tc.c'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="TCC - Timer Counter for Control Applications (Callback APIs)">
+      <action description="Import framework file as 'src\ASF\sam0\drivers\tcc\tcc_callback.c'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\drivers\tcc\tcc.c'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\drivers\tcc\quick_start_faultn\qs_tcc_faultn.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\drivers\tcc\quick_start_buffering\qs_tcc_buffering.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\drivers\tcc\quick_start_timer\qs_tcc_timer.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\drivers\tcc\quick_start_faultx\qs_tcc_faultx.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\drivers\tcc\quick_start_dma\qs_tcc_dma.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\drivers\tcc\tcc.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\drivers\tcc\quick_start_callback\qs_tcc_callback.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\drivers\tcc\quick_start\qs_tcc_basic.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\drivers\tcc\tcc_callback.h'." result="SUCCESS" resulttext="" />
+      <action description="Define symbol 'TCC_ASYNC=true'." result="SUCCESS" resulttext="" />
+      <action description="Add Assembler Flag '-DTCC_ASYNC=true'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="Common SAM0 compiler driver">
+      <action description="Import framework file as 'src\ASF\sam0\utils\compiler.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\header_files\io.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\status_codes.h'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="SAMD10 part definitions">
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\samd10d12as.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\samd10d13as.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\samd10d14as.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\samd10.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\samd10d14au.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\samd10c12a.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\samd10c13a.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\samd10c14a.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\samd10d12am.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\samd10d13am.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\samd10d14am.h'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="SAMD10 component definitions">
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\component\tc.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\component\adc.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\component\ac.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\component\dac.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\component\dmac.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\component\pac.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\component\nvmctrl.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\component\evsys.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\component\eic.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\component\port.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\component\gclk.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\component\pm.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\component\mtb.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\component\sysctrl.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\component\dsu.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\component\rtc.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\component\tcc.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\component\wdt.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\component\hmatrixb.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\component\sercom.h'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="SAMD10 instance definitions">
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\instance\ac.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\instance\gclk.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\instance\sbmatrix.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\instance\tc1.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\instance\tc2.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\instance\evsys.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\instance\sercom0.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\instance\sercom1.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\instance\port.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\instance\sercom2.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\instance\pac2.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\instance\pac1.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\instance\pac0.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\instance\mtb.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\instance\rtc.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\instance\tcc0.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\instance\nvmctrl.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\instance\eic.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\instance\adc.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\instance\wdt.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\instance\dmac.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\instance\sysctrl.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\instance\dsu.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\instance\pm.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\instance\dac.h'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="SAMD10 PIO definitions">
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\pio\samd10d12am.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\pio\samd10d13as.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\pio\samd10c14a.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\pio\samd10d12as.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\pio\samd10d14am.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\pio\samd10d14as.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\pio\samd10c13a.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\pio\samd10c12a.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\pio\samd10d14au.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\include\pio\samd10d13am.h'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="SAMD10 startup code">
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\source\gcc\startup_samd10.c'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\source\system_samd10.c'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\cmsis\samd10\source\system_samd10.h'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="sam0.utils.preprocessor">
+      <action description="Import framework file as 'src\ASF\sam0\utils\preprocessor\tpaste.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\preprocessor\mrepeat.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\preprocessor\mrecursion.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\preprocessor\preprocessor.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\sam0\utils\preprocessor\stringz.h'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="Syscalls for C library">
+      <action description="Import framework file as 'src\ASF\sam0\utils\syscalls\gcc\syscalls.c'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="CMSIS thirdparty sources">
+      <action description="Import framework file as 'src\ASF\thirdparty\CMSIS\Include\arm_math.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\thirdparty\CMSIS\Include\core_cmFunc.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\thirdparty\CMSIS\Include\core_cm0plus.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\thirdparty\CMSIS\Include\core_cmInstr.h'." result="SUCCESS" resulttext="" />
+      <action description="Define symbol 'ARM_MATH_CM0PLUS=true'." result="SUCCESS" resulttext="" />
+      <action description="Add Assembler Flag '-DARM_MATH_CM0PLUS=true'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\thirdparty\CMSIS\Lib\GCC\libarm_cortexM0l_math.a'." result="SUCCESS" resulttext="" />
+      <action description="Add library 'libarm_cortexM0l_math' to included libraries." result="SUCCESS" resulttext="" />
+      <action description="Add '../src/ASF/thirdparty/CMSIS/Lib/GCC' to library search path." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="CMSIS license">
+      <action description="Import framework file as 'src\ASF\thirdparty\CMSIS\CMSIS_END_USER_LICENCE_AGREEMENT.pdf'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\thirdparty\CMSIS\README.txt'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\thirdparty\CMSIS\ATMEL-disclaimer.txt'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\thirdparty\CMSIS\Lib\license.txt'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+  </update>
+</conversion>
